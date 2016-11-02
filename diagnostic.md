@@ -6,21 +6,26 @@ Record your responses inside the fenced code blocks below each question.
     and what are the main task(s) you perform inside an Ember Route?
 
     ```md
-    <!-- your response here -->
+    Main tasks performed inside Ember Application Router:
+    To coordinate view states beyond "superficial" methods like jQuery. It is
+    done with different urls (examples: /index, /departments, /workers, etc)
+    Main tasks performed inside an Ember Route:
+    Rendering templates for the view state specified (view state for /index,
+    view state for /departments, etc)
     ```
 
 1.  What is the command to generate a route named `boston` nested under
     `campus`?
 
     ```md
-    <!-- your response here -->
+    ember g route campus/boston
     ```
 
 1.  Suppose you have a nested route at the URL `/campus/boston`. How would you
     use the `link-to` helper to generate an appropriate link?
 
     ```md
-    <!-- your response here -->
+      {{#link-to 'campus.boston'}}Boston{{/link-to}}
     ```
 
 1.  Explain **at least** two differences between the following two route
@@ -35,7 +40,9 @@ Record your responses inside the fenced code blocks below each question.
     ```
 
     ```md
-    <!-- your response here -->
+    1. Both are nested, but the nesting is created in two different ways (ie
+    with a function in the first one, specifying nested path in the second)
+    2. ??
     ```
 
 1.  Suppose we have the following route definition:
@@ -48,11 +55,13 @@ Record your responses inside the fenced code blocks below each question.
     value `'123'` inside a Route?
 
     ```md
-    <!-- your response here -->
+    '/movies/:movie_id' , if I'm interpreting the question correctly.
     ```
 
 1.  Inside a template, how do we reference data provided by a Route?
 
     ```md
-    <!-- your response here -->
+    Not sure what the question is exactly... But if I'm interpreting it
+    correctly, I'd like to say that it can be rendered with an each loop in
+    Handlebars.
     ```
